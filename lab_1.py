@@ -7,6 +7,7 @@ This is a temporary script file.
 """
 
 import csv
+from tkinter import E
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -105,8 +106,8 @@ new_sigma_wm = (sum(1/(np.array(sigma_ej_list))**2))**(-1/2)
 
 # This is the summary of all the stats that were calculated
 print(tabulate({'First Name': ['John', 'Mary'], 'Last Name': ['Smith', 'Jane', 'Doe'], 'Age': [39, 25, 28]}, headers="keys", tablefmt='fancy_grid'))
-
-
+print(ej)
+print(sigma_ej)
 
 
 
