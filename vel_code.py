@@ -105,7 +105,7 @@ new_sigma_wm = (sum(1/(np.array(sigma_ej_list))**2))**(-1/2)
 
 # This is the summary of all the stats that were calculated
 print(tabulate({'Statistic for Coefficient of Restitution': ['Unweighted Mean', 'Weighted Mean'], 'Values': [unweighted_mean, w_m], 'Standard Error': [std,new_sigma_wm]}, headers="keys", tablefmt='fancy_grid'))
-print(tabulate({'Statistic for Coefficient of Restitution': ['Unweighted Mean', 'Weighted Mean'], 'Values': [str(round(unweighted_mean,3)) + u" \u00B1 " + str(round(std[0],3)), str(round(w_m,3))+u" \u00B1 "+ str(round(new_sigma_wm,3))]}, headers="keys", tablefmt='fancy_grid'))
+print(tabulate({'Coefficient of Restitution': ['Unweighted Mean', 'Weighted Mean'], 'Values': [str(round(unweighted_mean,3)) + u" \u00B1 " + str(round(std[0],3)), str(round(w_m,3))+u" \u00B1 "+ str(round(new_sigma_wm,3))]}, headers="keys", tablefmt='fancy_grid'))
 
 # This is to round to the amount of sig figs needed
 print(round(std,3))
