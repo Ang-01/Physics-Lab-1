@@ -110,6 +110,6 @@ print(tabulate({'Coefficient of Restitution': ['Unweighted Mean', 'Weighted Mean
 # This is to round to the amount of sig figs needed
 print(round(std,3))
 
-
+#plt.errorbar(x, y + 3, yerr=yerr, label='both limits (default)')
 
 
